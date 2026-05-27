@@ -1,0 +1,6 @@
+{
+  "name": "Pepsi Summer Drop",
+  "description": "High-converting DTC promotional website for Pepsi Cola",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

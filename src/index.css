@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Inter:wght@400;500;600;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Arial Black", "Helvetica Bold", sans-serif;
+  --color-pepsi-blue: #005CB9;
+  --color-pepsi-light-blue: #005CB9;
+  --color-pepsi-red: #EF3340;
+  --color-pepsi-black: #001B3A;
+  --color-pepsi-gray: rgba(255, 255, 255, 0.05);
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .cta-glow {
+    box-shadow: 0 0 25px rgba(239, 51, 64, 0.4);
+  }
+  .can-shadow {
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));
+  }
+  .text-stroke {
+    -webkit-text-stroke: 1.5px white;
+  }
+}
+
+body {
+  @apply bg-[#001B3A] text-white antialiased;
+}
